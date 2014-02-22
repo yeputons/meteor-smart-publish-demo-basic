@@ -4,7 +4,7 @@ Authors = new Meteor.Collection('author');
 if (Meteor.isClient) {
   Template.main.helpers({
     items: function() {
-      return Items.find({}, {sort: ['authorId', 'allowSecret']});
+      return Items.find({}, {sort: ['authorId', 'allowSecret', '_id']});
     },
     authors: function() {
       return Authors.find();
