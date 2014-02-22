@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "smart-publish": {}
+    },
+    "packages": {
+      "smart-publish": {
+        "git": "https://github.com/yeputons/meteor-smart-publish.git",
+        "tag": "v0.1.1",
+        "commit": "04c48962947c6297647e1969926f750f82ebb0f2"
+      }
+    }
+  }
+}

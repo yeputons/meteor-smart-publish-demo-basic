@@ -1,3 +1,0 @@
-[submodule "packages/smart-publish"]
-	path = packages/smart-publish
-	url = https://github.com/yeputons/meteor-smart-publish.git
