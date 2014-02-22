@@ -1,0 +1,27 @@
+<head>
+  <title>test</title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+  <h3>Items</h3>
+  <ul>
+  {{#each items}}
+    {{> item}}
+  {{/each}}
+  </ul>
+
+  <h3>Authors</h3>
+  <ul>
+  {{#each authors}}
+    <li>{{id}}, secret={{secret}}</li>
+  {{/each}}
+  </ul>
+</template>
+
+<template name="item">
+  <li><input type="checkbox" id="enabled-{{_id}}" {{#if enabled}}checked{{/if}} /><label for="enabled-{{_id}}">allowSecret={{allowSecret}}, authorId={{authorId}}</label></li>
+</template>
