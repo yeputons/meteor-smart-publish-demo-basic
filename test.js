@@ -13,7 +13,7 @@ if (Meteor.isClient) {
 
   Template.item.events({
     'change input': function(ev, instance) {
-      Items.update(this._id, {$set: {enabled: !!ev.originalTarget.checked}});
+      Items.update(this._id, {$set: {enabled: !!ev.target.checked}});
     }
   });
 
