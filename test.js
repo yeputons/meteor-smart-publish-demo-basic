@@ -1,5 +1,5 @@
-Items = new Meteor.Collection('items');
-Authors = new Meteor.Collection('author');
+Items = new Mongo.Collection('items');
+Authors = new Mongo.Collection('author');
 
 if (Meteor.isClient) {
   Template.main.helpers({
